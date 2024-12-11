@@ -1,0 +1,107 @@
+.container_1 {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_1 .caja-produc {
+  display: flex;
+  height: 145px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.5s ease-in-out; /* Combina las transiciones en una sola línea */
+  background-color: #e4e4e4;
+  margin: 10px;
+  margin-left: 50px;
+}
+.container_1 .caja-produc .img-car{
+  width: 100px;
+  text-align: center;
+}
+.container_1 .caja-produc .img-car img {
+  margin-top: 1rem;
+  height: 115px;
+  padding: 1rem;
+  margin-left: -70px;
+}
+
+.container_1 .caja-produc .text {
+  font-family: "Open Sans", sans-serif;
+  margin: 1rem;
+}
+.container_1 .caja-produc .text .precios{
+  display: flex;
+}
+
+.container_1 .caja-produc .text .diario {
+  font-size: 10px;
+  color: #5c5c5c;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+.container_1 .caja-produc .text .precio {
+  font-size: 20px;
+  color: #ffc107;
+}
+.container_1 .caja-produc .text .marca{
+  color: #5c5c5c;
+}
+.container_1 .caja-produc .text .titulo{
+  font-size: 'Montserrat', sans-serif;
+}
+
+.container_1 .caja-produc .text button {
+  width: 120px;
+  background-color: #ffc107;
+  color: black; 
+  border-radius: 10px;
+  border: none;
+  height: 35px;
+  transition: background-color 0.3s, color 0.3s; 
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+.container_1 .caja-produc .text .boton{
+  text-align: center;
+}
+
+.container_1 .caja-produc:hover {
+  background-color: hsl(45, 100%, 98%);
+  transform: scale(1.05);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container_1 .caja-produc:hover button {
+  background-color: black; 
+  color: white;
+}
+.container_1 .caja-produc:hover .titulo{
+  color: #ffc107;
+}
+.container .caja-produc:hover .precio{
+  color: black;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination button {
+  background-color: #ffdb58;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 1rem;
+  margin-left: 10px;
+}
+
+.pagination button:hover,
+.pagination button:focus {
+  background-color: #f5c637;
+  color: black;
+}
